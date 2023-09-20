@@ -6,3 +6,7 @@ nav a {
   padding: 5px 15px;
   border-radius: 15px;
 }
+nav a.active {
+  background-color: coral;
+  color: black;
+}

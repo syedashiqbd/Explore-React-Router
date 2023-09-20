@@ -5,7 +5,7 @@ const Posts = () => {
   const posts = useLoaderData();
 
   return (
-    <div className="users">
+    <div className="users" style={{ marginTop: '20px' }}>
       {posts.map((post) => (
         <Post key={post.id} post={post}></Post>
       ))}

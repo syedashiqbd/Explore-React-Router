@@ -7,7 +7,7 @@ const Users = () => {
 
   return (
     <div>
-      <div className="users">
+      <div className="users" style={{ marginTop: '20px' }}>
         {users.map((user) => (
           <User key={user.id} user={user}></User>
         ))}
