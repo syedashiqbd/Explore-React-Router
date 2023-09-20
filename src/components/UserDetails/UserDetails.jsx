@@ -1,8 +1,7 @@
 import { useLoaderData } from 'react-router-dom';
 
 const UserDetails = () => {
-  const userDetails = useLoaderData();
-  const { name, username, address, company } = userDetails;
+  const { name, username, address } = useLoaderData();
   const { city, street, zipcode } = address;
   return (
     <div
@@ -17,7 +16,6 @@ const UserDetails = () => {
       <p>{city}</p>
       <p>{street}</p>
       <p>{zipcode}</p>
-      <h3>{company.name}</h3>
     </div>
   );
 };
